@@ -2,7 +2,7 @@
 
 Tech stack:
 
-Node.js, Express.js, LoopBack
+Node.js, Express.js, LoopBack, AngularJS
 
 
 Design:
