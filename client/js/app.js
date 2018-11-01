@@ -60,8 +60,16 @@ angular
       .state('sign-up-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'
+      })
+      .state('home', {
+        url: '/',
+        templateUrl: '/views/index.html'
+      })
+      .state('404', {
+        url: '*path',
+        templateUrl: '/views/404.html'
       });
-    $urlRouterProvider.otherwise('all-reviews');
+    $urlRouterProvider.otherwise('/');
   }])
   .run(['$rootScope', '$state', 'LoopBackAuth', 'AuthService', function($rootScope, $state, LoopBackAuth, AuthService) {
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {

@@ -11,7 +11,7 @@ module.exports = function(app) {
   }, function(err, results) {
     if (err) throw err;
     createReviews(results.reviewers, results.coffeeShops, function(err) {
-      console.log('> models created sucessfully');
+      console.log('> Reviews models created sucessfully');
     });
   });
   //create reviewers
